@@ -290,14 +290,8 @@ article{
     .nav-bar{
         padding: 50px 10px;
     }
-    .menu-hide{
-        display: none;
-    }
     .nav-items{
         flex-direction: column;
-    }
-    .nav-items:hover{
-        display: block;
     }
     
    /* nav style end */
@@ -427,11 +421,5 @@ article{
 
  /* for desktop  */
  @media only screen and (min-width: 577px) and (max-width: 1440px) {
-    .menu{
-        display: none;
-    }
- }
-
- .hidden{
-    display: none;
+   
  }
