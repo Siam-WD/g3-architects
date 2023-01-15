@@ -36,7 +36,6 @@ body{
 }
 
 
-
 /* header start  */
 header{
     background: #FF900E1A;
@@ -164,6 +163,8 @@ article{
     width: 342px;
     height: 200px;
     position: relative;
+    top: -170px;
+    right: -20px;
 }
 .btn-title{
     font-weight: 700;
@@ -193,18 +194,16 @@ article{
     justify-content: space-around;
  }
  .box{
-    width: 241.83px;
-    height: 241.83px;
+    width: 240px;
+    height: 240px;
     border: 1px solid #FF900E;
     border-radius: 8px;
     text-align: center;
     padding-top: 45px;
-    transition: width 1s, height 1s, padding-top 1s, border-color, transform;
+    transition: width .5s, border-color, transform;
  }
  .box:hover{
-    width: 350px;
-    height: 250px;
-    padding-top: 100px;
+    width: 500px;
     border-color: #ff6c6f;
     animation-duration: 1s;
  }
@@ -260,18 +259,29 @@ article{
  /* for mobile  */
  @media only screen and (max-width: 576px) {
     
+    /* nav style start  */
+    .menu{
+        display: block;
+    }
     .nav-bar{
-        padding: 50px 2px;
+        padding: 50px 10px;
     }
-    .nav-items{
+    .menu-hide{
         display: none;
-    }
-    .website-name{
-        font-size: 30px;
     }
     .nav-items{
         flex-direction: column;
     }
+    .nav-items:hover{
+        display: block;
+    }
+    
+   /* nav style end */
+    
+    .website-name{
+        font-size: 30px;
+    }
+
     header{
         padding: 0px;
     }
@@ -319,6 +329,9 @@ article{
         height: 100px;
         width: 150px;
         margin: 0 30%;
+        position: relative;
+         top: -100px;
+         right: -20px;
     }
     .btn-title{
         font-size: 30px;
@@ -365,7 +378,9 @@ article{
 
  /* for desktop  */
  @media only screen and (min-width: 577px) and (max-width: 1440px) {
-    
+    .menu{
+        display: none;
+    }
  }
 
  .hidden{
