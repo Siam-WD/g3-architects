@@ -72,6 +72,7 @@ header{
     background-color: #FF900E;
 }
 .header-banner{
+    justify-content: center;
     padding: 50px 0;
     width: 100%;
 }
@@ -156,9 +157,6 @@ article{
     gap: 20px;
     padding: 30px 42px 30px 30px;
 }
-.feture-banner{
-    border: 2px solid red;
-}
 .feture-banner img{
     margin: 0 0 77px 92px;
 }
@@ -201,12 +199,13 @@ article{
     border-radius: 8px;
     text-align: center;
     padding-top: 45px;
-    transition: width 1s, height 1s, padding-top 1s, transform;
+    transition: width 1s, height 1s, padding-top 1s, border-color, transform;
  }
  .box:hover{
     width: 350px;
     height: 250px;
     padding-top: 100px;
+    border-color: #ff6c6f;
     animation-duration: 1s;
  }
  .box-point{
@@ -258,3 +257,104 @@ article{
             responsive part 
  ---------------------------------------------------------- */
 
+ /* for mobile  */
+ @media only screen and (max-width: 576px) {
+    header{
+        padding: 0px;
+    }
+    .header-container{
+        padding: 5px;
+    }
+    .header-title{
+        font-size: 36px;
+    }
+    .header-banner img, .gallery-img img{
+        height: 100%;
+        width: 100%;
+    }
+    .gallery-container, .features-container{
+        flex-direction: column;
+        padding: 0 10px; 
+    }
+    .gallery{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .gallery-items{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .gallery-title{
+        font-size: 25px;
+    }
+    .gallery-info{
+        font-size: 16px;
+    }
+    .features-container{
+        margin: 0;
+        padding: 0;
+    }
+    .fetures-container-title{
+        font-size: 30px;
+    }
+    .feture-banner img{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .feture-banner .btn-primary{
+        height: 100px;
+        width: 150px;
+        margin: 0 30%;
+    }
+    .btn-title{
+        font-size: 30px;
+    }
+    .some-facts-container{
+        margin: 20px 10px;
+    }
+    .facts-title{
+        text-align: center;
+    }
+    .facts-info{
+        text-align: center;
+        width: 100%;
+    }
+    .box{
+        padding: 0;
+        width: 100%;
+        height: 130px;
+    }
+    .box-point{
+        font-size: 20px;
+    }
+    .box-info{
+        font-size: 16px;
+    }
+    .sponsor-container{
+        margin: 10px;
+        padding: 10px;
+    }
+    .sponsors img{
+        width: 70px;
+    }
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+    }
+    .sponsor-title{
+        font-size: 32px;
+    }
+
+}
+
+
+ /* for desktop  */
+ @media only screen and (min-width: 577px) and (max-width: 1440px) {
+    
+ }
+
+ .hidden{
+    display: none;
+ }
