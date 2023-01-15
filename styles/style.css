@@ -240,6 +240,30 @@ article{
     justify-content: space-between;
     margin-bottom: 120px;
  }
+
+ /*  question styles  */
+ .question{
+    background: #FF900E;
+    margin: 50px 240px;
+    padding: 50px 50px;
+ }
+ .question-title{
+    color: #ffffff ;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 30px;
+  }
+   .question-info{
+    padding-bottom: 30px;
+    color: #ffffff ;
+    font-size: 25px;
+    font-weight: 500;
+ }
+ .question .btn-primary{
+    color: #FF900E;
+    background: #ffffff;
+ }
+
  /* ----------------------------------
          footer styles 
  ------------------------------------ */
@@ -372,7 +396,32 @@ article{
     .sponsor-title{
         font-size: 32px;
     }
-
+    .question{
+        text-align: center;
+        background: #FF900E;
+        margin: 0;
+        padding: 10px 10px;
+     }
+     .question-title{
+        color: #ffffff ;
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 20px;
+      }
+       .question-info{
+        padding-bottom: 20px;
+        color: #ffffff ;
+        font-size: 16px;
+        font-weight: 400;
+       }
+       .question .btn-primary{
+        font-size: 16px;
+        height: 36px;
+        width: 120px;
+    }
+    .footer-copyright{
+        font-size: 16px;
+    }
 }
 
 
