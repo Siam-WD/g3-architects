@@ -364,6 +364,9 @@ article{
         text-align: center;
         width: 100%;
     }
+    .box-container{
+        flex-direction: column;
+    }
     .box{
         padding: 0;
         width: 100%;
@@ -383,9 +386,11 @@ article{
         width: 70px;
     }
     .sponsors{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
     }
     .sponsor-title{
         font-size: 32px;
